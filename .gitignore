@@ -1,0 +1,20 @@
+# Arduino / PlatformIO build output
+build/
+.pio/
+*.bin
+*.elf
+
+# Altium generated files
+History/
+Project Logs for */
+__Previews/
+*.PrjPcbStructure
+*.SchDocPreview
+*.PcbDocPreview
+*.LOG
+*.Dat
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
