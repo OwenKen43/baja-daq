@@ -128,6 +128,12 @@ t_us,id,dlc,data
 CAN RX was moved off GPIO5 in Stage D because the SD card needed the SPI clock pin.
 </details>
 
+### CAN test node PCB
+
+<img src="hardware/board-3d.png" alt="3D render of the CAN accelerometer test node" width="480">
+
+I also designed a CAN sensor node in **Altium Designer**: an ESP32-C3, a CAN transceiver with bus protection, 12 V vehicle power regulated to 5 V, and an automotive 6-axis IMU, all behind a Deutsch DT connector. **[Schematics, layout, and design notes →](hardware/)**
+
 ---
 
 ## Repository layout
@@ -145,7 +151,7 @@ baja-daq/
 │       └── CANSelfTest/    One-board loopback test of the full CAN path
 ├── tools/
 │   └── SDReader/           Inspect and verify log files over USB serial
-└── hardware/               CAN test node PCB (Altium), coming soon
+└── hardware/               CAN accelerometer test node PCB (Altium)
 ```
 
 ### Development stages
